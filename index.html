@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;family=Anton&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: rgba(107, 57, 109, 0.9);
+            color: #fff;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Anton', sans-serif;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .navbar {
+            background: linear-gradient(to right, #EB5657, #EB6966);
+            height: 85px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .section {
+            border-top: 1.5px solid #6B396D;
+            padding: 20px;
+        }
+
+        /* About Me Section */
+        .about-me {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            text-align: center;
+            max-width: 50vw;
+            margin: auto;
+        }
+        .about-me img {
+            border-radius: 50%;
+            height: 200px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .projects img {
+            max-height: 30vh;
+            margin: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+        }
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Title -->
+    <h1 style="text-align: center;">Maria's Portfolio</h1>
+
+    <!-- About Me Section -->
+    <div id="about-me" class="section">
+        <h2>About Me</h2>
+        <div class="about-me">
+            <img src="/pics/maria.png" alt="Maria's Profile Picture">
+            <p>Hello and warmly welcome to my official website! I'm Maria van der Berg. I employ a contemporary approach to surrealism in my artworks. My pieces take you on a journey through a realm of imagination and wonder, where reality and dream seamlessly blend. I'm delighted that you're here to explore my artistic journey and admire my works.</p>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <img src="/pics/project1.jpeg" alt="Project 1">
+            <img src="/pics/project2.jpeg" alt="Project 2">
+            <img src="/pics/project3.png" alt="Project 3">
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="contact">
+            <a href="mailto:MariaSurrealistaArte@gmail.com">MariaSurrealistaArte@gmail.com</a><br>
+            <a href="https://www.instagram.com/maria.surrealista.arte" target="_blank">@maria.surrealista.arte</a><br>
+            <a href="tel:+391234567890">+39 123 456 7890</a>
+        </div>
+    </div>
+</body>
+</html>
